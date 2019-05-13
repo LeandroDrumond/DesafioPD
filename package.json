@@ -1,0 +1,16 @@
+{
+  "name": "desafiopasseidireto",
+  "version": "1.0.0",
+  "description": "Desafio teste Passei Direto",
+  "main": "nigthwatch.conf.s",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "author": "Leandro Drumond",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chromedriver": "^74.0.0",
+    "nightwatch": "^1.0.19"
+  }
+}
