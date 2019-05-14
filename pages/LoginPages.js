@@ -13,7 +13,7 @@ var logingmail = {
 
   validaLogin: function(){
     return this.useXpath()
-    .waitForElementVisible ('//div[@class="content_info"]', 20000)
+    .waitForElementVisible ('//div[@class="content_info"]', 30000)
     .click('//div[@class="content_info"]')
     .assert.containsText('//div[@class="text"]/h1[contains(text(),"Desafios QA")]', "Desafios QA" )
   },
