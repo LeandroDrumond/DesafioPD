@@ -3,6 +3,7 @@
     "src_folders" : ["tests"],
     "page_objects_path" : "./pages",
     "globals_path": "./lib/global.js",
+    "waitForConditionPollInterval ": 20000,
 
     "webdriver" : {
       "start_process": true,

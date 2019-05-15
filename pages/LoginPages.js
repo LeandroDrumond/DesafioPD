@@ -2,10 +2,10 @@
 var logingmail = {
 
   logaPasseiDireto: function(){
-    return this.waitForElementVisible('@inputEmail',2000)
+    return this.waitForElementVisible('@inputEmail',10000)
     .setValue('@inputEmail', 'desafiosqa@gmail.com')
     .click('@btnProxima')
-    .waitForElementVisible('@inputPassword', 2000)
+    .waitForElementVisible('@inputPassword', 10000)
     .setValue('@inputPassword', '123@2019')
     .click('@btnProximaPassword')
 
@@ -13,7 +13,7 @@ var logingmail = {
 
   validaLogin: function(){
     return this.useXpath()
-    .waitForElementVisible ('//div[@class="content_info"]', 30000)
+    .waitForElementVisible ('//div[@class="content_info"]', 10000)
     .click('//div[@class="content_info"]')
     .assert.containsText('//div[@class="text"]/h1[contains(text(),"Desafios QA")]', "Desafios QA" )
   },

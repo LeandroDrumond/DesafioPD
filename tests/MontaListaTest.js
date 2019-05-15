@@ -20,25 +20,14 @@ module.exports = {
 
     },
 
-    'Teste Metodo': function(browser){
+    'Monta Lista de Livros': function(browser){
 
-        console.log('Teste')
         var montaLista = browser.page.MontaListaPages();
-        montaLista.waitForElementVisible ('@btnLista', 20000)
+        montaLista.waitForElementVisible ('@btnLista', 10000)
         .click('@btnLista')
         .useXpath()
         .waitForElementVisible('//h1[contains(text(),"testeLista")]')
-        .pause(20000)
-        .useXpath()
-              .getText('//h1[contains(text(),"testeLista")]', function(result) {
-              console.log(result.value);
-              if (result.value === 'testeLista') {
-
-                browser.click('//h1[contains(text(),"testeLista")]')
-                .pause(20000)
-                console.log ("caiu no if, vou dormir")
-              }
-            });
+        montaLista.validaListaFunction()
         browser.end();
     }
 }
